@@ -7,8 +7,8 @@ from telegram.ext import (
     filters,
 )
 import json
-
-TOKEN = 8652546187:AAFqLxiaQNfZa58-5g0MqG4-YJiM7y8mP90
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 
 # قراءة البيانات من ملف data.json
 def load_data():
